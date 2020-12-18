@@ -1,0 +1,211 @@
+:root{
+    --main-color: #283682;
+    --secondary: #f15924;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    width: 100%;
+   padding: 10px 0;
+}
+
+.innerNav{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.innerNav .desktopNav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  
+}
+
+.desktopNav a:not(.btn){
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 800;
+   
+}
+
+.desktopNav a:not(.btn)::after{
+    content: "";
+    border-right: 2px solid var(--secondary);
+    padding-right: 20px;
+    
+    transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+}
+
+.btn{
+    padding: 10px 20px;
+    background: var(--secondary);
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btnDark{
+    background: rgb(54, 53, 53);
+    border-radius: 15px;
+}
+
+#jumboSectionHome{
+    width: 100%;
+    height: 100vh;
+    background: url(/ennoble-images/intro.jpg) no-repeat;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    align-items: center;
+}
+#jumboSectionHome div {
+    width: 30%;
+    margin-left: 10%
+}
+#jumboSectionHome h1{
+    font-size: 92px;
+    text-transform: uppercase;
+    color: var(--main-color);
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+}
+
+#jumboSectionHome p{
+    font-size: 40px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#mission{
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#mission h2, #why h2{
+    font-size: 48px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    margin: 50px 0;
+}
+
+#mission p{
+    width: 50%;
+    margin: 0 auto;
+    font-size: 28px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#why{
+    width: 100%;
+    text-align: center;
+}
+
+.iconInfo{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 1em;
+}
+
+.iconInfo p{
+    padding-top: 20px;
+    line-height: 24px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#houseCalls{
+    width: 100%;
+    padding: 100px 0;
+}
+
+#houseCalls img{
+    border-radius: 50px;
+}
+
+
+
+.fortySixty{
+    width: 70%;
+    margin: 70px auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-gap: 1em;
+}
+
+.fortySixty .inForty{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.inForty h3, .inSixty h3{
+    font-size: 40px;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.inForty p, .inSixty p{
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.inForty .btnDark{
+    text-transform: uppercase;
+}
+
+.sixtyForty{
+    width: 70%;
+    margin: 70px auto;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 1em;
+}
+
+.sixtyForty .inSixty{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.inForty span, .inSixty span{
+    font-weight: 600;
+}
+
+.sixtyForty img , .fortySixty img{
+    width: 100%;
+}
+
+footer{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background:  rgb(54, 53, 53);
+    color: white;
+}
