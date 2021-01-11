@@ -1,57 +1,55 @@
-:root{
-    --main-color: #283682;
-    --secondary: #f15924;
+:root {
+  --main-color: #283682;
+  --secondary: #f15924;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.active{
-    color: grey !important;
+.active {
+  color: grey !important;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
-nav{
-    width: 100%;
-   padding: 10px 0;
-   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.37);
+nav {
+  width: 100%;
+  padding: 10px 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.37);
 }
 
-.innerNav{
-    width: 80%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 30% 70%;
+.innerNav {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 30% 70%;
 }
 
-.innerNav .desktopNav{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  
+.innerNav .desktopNav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.desktopNav a:not(.btn){
-    text-decoration: none;
-    color: var(--main-color);
-    font-weight: 800;
-   position: relative;
+.desktopNav a:not(.btn) {
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: 800;
+  position: relative;
 }
 
-.desktopNav a:not(.btn):not(.lastLink)::after{
-    
-content: "";
+.desktopNav a:not(.btn):not(.lastLink)::after {
+  content: "";
   position: absolute;
   left: 0;
   top: -5px;
@@ -62,605 +60,630 @@ content: "";
   border-right: 2px solid var(--secondary);
 }
 
-.btn{
-    padding: 10px 20px;
-    background: var(--secondary);
-    border-radius: 50px;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
+.btn {
+  padding: 10px 20px;
+  background: var(--secondary);
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-.btnDark{
-    background: rgb(54, 53, 53);
-    border-radius: 15px;
+.btnDark {
+  background: rgb(54, 53, 53);
+  border-radius: 15px;
 }
 
-#jumboSectionHome{
-    width: 100%;
-    height: 100vh;
-    background: url(/ennoble-images/intro.jpg) no-repeat;
-    background-size: cover;
-    background-position: top center;
-    display: flex;
-    align-items: center;
+#jumboSectionHome {
+  width: 100%;
+  height: 100vh;
+  background: url(/ennoble-images/intro.jpg) no-repeat;
+  background-size: cover;
+  background-position: top center;
+  display: flex;
+  align-items: center;
 }
 #jumboSectionHome div {
-    width: 30%;
-    margin-left: 10%
+  width: 30%;
+  margin-left: 10%;
 }
-#jumboSectionHome h1{
-    font-size: 92px;
-    text-transform: uppercase;
-    color: var(--main-color);
-    margin: 0;
-    padding: 0;
-    font-weight: 700;
-}
-
-#jumboSectionHome p{
-    font-size: 28px;
-    font-weight: 300;
-    font-family: 'Montserrat', sans-serif;
+#jumboSectionHome h1 {
+  font-size: 92px;
+  text-transform: uppercase;
+  color: var(--main-color);
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
 }
 
-#mission{
-    width: 100%;
-    text-align: center;
-    padding: 50px 0;
+#jumboSectionHome p {
+  font-size: 28px;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
 }
 
-#mission h2, #why h2{
-    font-size: 48px;
-    color: var(--main-color);
-    text-transform: uppercase;
-    margin: 50px 0;
+#mission {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
 }
 
-#mission p{
-    width: 50%;
-    margin: 0 auto;
-    font-size: 28px;
-    font-weight: 300;
-    font-family: 'Montserrat', sans-serif;
+#mission h2,
+#why h2 {
+  font-size: 48px;
+  color: var(--main-color);
+  text-transform: uppercase;
+  margin: 50px 0;
 }
 
-#why{
-    width: 100%;
-    text-align: center;
+#mission p {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 28px;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
 }
 
-.iconInfo{
-    width: 70%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-gap: 1em;
+#why {
+  width: 100%;
+  text-align: center;
 }
 
-.iconInfo p{
-    padding-top: 20px;
-    line-height: 24px;
-    width: 80%;
-    margin: 0 auto;
+.iconInfo {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 1em;
 }
 
-#houseCalls{
-    width: 100%;
-    padding: 100px 0;
+.iconInfo p {
+  padding-top: 20px;
+  line-height: 24px;
+  width: 80%;
+  margin: 0 auto;
 }
 
-#houseCalls img{
-    border-radius: 50px;
+#houseCalls {
+  width: 100%;
+  padding: 100px 0;
 }
 
-
-
-.fortySixty{
-    width: 70%;
-    margin: 70px auto;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-gap: 1em;
+#houseCalls img {
+  border-radius: 50px;
 }
 
-.fortySixty .inForty{
-    width: 80%;
-    height: 100%;
-    display: flex;
-    align-items: center;
+.fortySixty {
+  width: 70%;
+  margin: 70px auto;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-gap: 1em;
 }
 
-.inForty h3, .inSixty h3{
-    font-size: 40px;
-    color: var(--main-color);
-    text-transform: uppercase;
+.fortySixty .inForty {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
-.inForty p, .inSixty p{
-    line-height: 24px;
-    margin-bottom: 30px;
+.inForty h3,
+.inSixty h3 {
+  font-size: 40px;
+  color: var(--main-color);
+  text-transform: uppercase;
 }
 
-.inForty .btnDark{
-    text-transform: uppercase;
+.inForty p,
+.inSixty p {
+  line-height: 24px;
+  margin-bottom: 30px;
 }
 
-.sixtyForty{
-    width: 70%;
-    margin: 70px auto;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-gap: 1em;
+.inForty .btnDark {
+  text-transform: uppercase;
 }
 
-.sixtyForty .inSixty{
-    width: 80%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+.sixtyForty {
+  width: 70%;
+  margin: 70px auto;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-gap: 1em;
 }
 
-.inForty span, .inSixty span, .infoStuff span{
-    font-weight: 600;
+.sixtyForty .inSixty {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
-.sixtyForty img , .fortySixty img{
-    width: 100%;
+.inForty span,
+.inSixty span,
+.infoStuff span {
+  font-weight: 600;
 }
 
-footer{
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    background:  rgb(54, 53, 53);
-    color: white;
+.sixtyForty img,
+.fortySixty img {
+  width: 100%;
 }
 
-footer p{
-    font-size: 24px;
+footer {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background: rgb(54, 53, 53);
+  color: white;
 }
 
-.mobileNav{
-    display:none;
-    background: white;
-    position: absolute;
-    left: 0;
-    top: 100px;
-    width: 100%;
-    padding: 10px 0 100px 50px;
-    list-style: none;
-    -webkit-animation-name: fadeInDown;
-            animation-name: fadeInDown;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-            -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
+footer p {
+  font-size: 24px;
 }
 
-.mobileNav li{
-    margin: 20px 0;
+.mobileNav {
+  display: none;
+  background: white;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  width: 100%;
+  padding: 10px 0 100px 50px;
+  list-style: none;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
-.mobileNav a:not(.btn){
-    text-decoration: none;
-    color: var(--main-color);
+.mobileNav li {
+  margin: 20px 0;
+}
+
+.mobileNav a:not(.btn) {
+  text-decoration: none;
+  color: var(--main-color);
 }
 #openMobile {
-    display: none;
+  display: none;
 }
 
 /* HOUSECALLS STYLES */
 
-#houseHome{
-    width: 100%;
-    /* height: 40vh; */
-    padding: 100px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#houseHome {
+  width: 100%;
+  /* height: 40vh; */
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.houseGrid{
-    width: 70%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-gap: 2rem;
+.houseGrid {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-gap: 2rem;
 }
 
-.houseGrid img{
-    width: 100%;
-    border-radius: 50px;
+.houseGrid img {
+  width: 100%;
+  border-radius: 50px;
 }
 
-.houseGrid .infoStuff{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
+.houseGrid .infoStuff {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
-.houseGrid .infoStuff h2{
-    font-size: 48px;
-    color: var(--main-color);
-    text-transform: uppercase;
-    margin: 20px 0;
+.houseGrid .infoStuff h2 {
+  font-size: 48px;
+  color: var(--main-color);
+  text-transform: uppercase;
+  margin: 20px 0;
 }
 
-.houseGrid .infoStuff p{
-    
-    margin: 0 auto;
-    font-size: 18px;
-    font-weight: 300;
-    font-family: 'Montserrat', sans-serif;
+.houseGrid .infoStuff p {
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
 }
 
-.houseGrid .infoStuff .greyed{
-    padding-top: 50px;
-    font-weight: 600;
-    font-size: 24px;
-    color: grey;
+.houseGrid .infoStuff .greyed {
+  padding-top: 50px;
+  font-weight: 600;
+  font-size: 24px;
+  color: grey;
 }
-#blueHouse{
-    width: 100%;
-    padding: 100px 0;
-    background-color: var(--main-color);
-    color: white;
-    position: relative;
+#blueHouse {
+  width: 100%;
+  padding: 100px 0;
+  background-color: var(--main-color);
+  color: white;
+  position: relative;
 }
 
-.blueContent{
-    width: 70%;
-    margin: 0 auto;
-   
+.blueContent {
+  width: 70%;
+  margin: 0 auto;
 }
 
 .circInsure {
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    background-color: #f15924;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: absolute;
-    top: -50px;
-    right: 200px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: #f15924;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: -50px;
+  right: 200px;
 }
 
-.circInsure p{
-    font-size: .8rem;
-    font-weight: 600;
+.circInsure p {
+  font-size: 0.8rem;
+  font-weight: 600;
 }
-.blueContent h2{
-    font-size: 3rem;
+.blueContent h2 {
+  font-size: 3rem;
 }
-.blueGrid{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-gap: 1em;
-}
-
-.extra{
-    grid-template-columns: repeat(3, auto);
+.blueGrid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 1em;
 }
 
-.extra ul li{
-    /* margin-bottom: 20px; */
+.extra {
+  grid-template-columns: repeat(3, auto);
 }
 
-.blueGrid div{
-    width: 90%;
+.extra ul li {
+  /* margin-bottom: 20px; */
 }
-.blueGrid h3{
-    margin: 5px 0;
-    font-size: 1.3rem;
+
+.blueGrid div {
+  width: 90%;
 }
-.blueGrid p{
-    font-size: 1.1rem;
-    margin: 5px 0;
+.blueGrid h3 {
+  margin: 5px 0;
+  font-size: 1.3rem;
+}
+.blueGrid p {
+  font-size: 1.1rem;
+  margin: 5px 0;
 }
 
 /* HOUSECALLS STYLES */
 
-.orange{
-    width: 100%;
-    height: 100%;
-    padding: 100px 0;
-    background: url(/ennoble-images/footer-bg-1.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
+.orange {
+  width: 100%;
+  height: 100%;
+  padding: 100px 0;
+  background: url(/ennoble-images/footer-bg-1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
 }
 
-.orange h2{
-    font-size: 3rem;
-    color: white;
+.orange h2 {
+  font-size: 3rem;
+  color: white;
 }
 
-.orange p{
-    font-size: 1.3rem;
-    color: white;
-    font-weight: 600;
-    margin: 0;
-    padding: 0;
-
+.orange p {
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
 }
 
-.orange a{
-    text-decoration: none;
+.orange a {
+  text-decoration: none;
 }
 
-.orange .iconGrid{
-    
-    width: 30%;
-    margin: 0 auto;
-    margin-top: 50px;
-    display:  flex;
-    justify-content: space-around;
+.orange .iconGrid {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
 }
 
 /* CONTACT STYLES */
 
-#contactHome{
-    width: 100%;
-    /* height: 100vh; */
-    padding: 100px 0;
-    background: var(--main-color);
+#contactHome {
+  width: 100%;
+  /* height: 100vh; */
+  padding: 0;
+  background: var(--main-color);
 }
 
-#contactHome h5{
-    margin: 0;
-    padding: 0;
-    color: white;
-    text-align: center;
-    font-size: 1rem;
+#contactHome h5 {
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
 }
 
-.contactGrid{
-    width: 70%;
-    margin: 0 auto;
-    height: 100%;
-    padding: 100px 0;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    
+.contactGrid {
+  width: 50%;
+  margin: 0 auto;
+  height: 100%;
+  padding: 100px 0;
+  text-align: center;
+}
+.contactGrid #callNow {
+  font-size: 2rem;
+  color: white;
+  font-weight: 700;
+}
+.contactGrid .iconGrid, .locationGrid{
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-
-.contactGrid div{
-    width: 100%;
-    height: 100%;
-    
+.locationGrid{
+    margin: 20px 0;
 }
-
-.phoneNum{
-    font-size: 36px;
-    font-weight: 600;
-}
-
-.contactGrid .group{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-gap: 1em;
-}
-
-.contactGrid .group input{
-    width: 100%;
-    
-}
-
-.contactGrid .gridded, .contactGrid form{
-    display: grid;
-    grid-gap: 1em;
-}
-
-.contactGrid form input, .contactGrid form textarea, .contactGrid form button{
-    padding: 20px;
-
-}
-
-.contactGrid form button{
-    width: 30%;
-    background: var(--secondary);
-    margin: 0 auto;
-    border-radius: 15px;
-    color: white;
-    font-size: 24px;
-    border: none;
-}
-
-.centerAlign{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+.contactGrid .iconGrid img {
+  width: 70px;
 }
 
 
 
-.centerAlign p{
-    font-size: 18px;
-    font-weight: 600;
+.contactGrid div {
+  width: 100%;
+  height: 100%;
 }
 
-.space{
-    grid-gap: 1em;
-
+.phoneNum {
+  font-size: 36px;
+  font-weight: 600;
 }
 
+.contactGrid .group {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 1em;
+}
 
+.contactGrid .group input {
+  width: 100%;
+}
+
+.contactGrid .gridded,
+.contactGrid form {
+  display: grid;
+  grid-gap: 1em;
+}
+
+.contactGrid form input,
+.contactGrid form textarea,
+.contactGrid form button {
+  padding: 20px;
+}
+
+.contactGrid form button {
+  width: 30%;
+  background: var(--secondary);
+  margin: 0 auto;
+  border-radius: 15px;
+  color: white;
+  font-size: 24px;
+  border: none;
+}
+
+.centerAlign {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.centerAlign p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.space {
+  grid-gap: 1em;
+}
 
 @keyframes fadeInDown {
-    0% {
-       opacity: 0;
-       transform: translateY(-20px);
-    }
-    100% {
-       opacity: 1;
-       transform: translateY(0);
-    }
- } 
-
-@media only screen and (max-width: 1640px){
-    .desktopNav {
-        width: 90%;
-    }
-
-    .desktopNav a {
-        font-size: .9rem;
-    }
-    .desktopNav a:not(.btn):not(.lastLink)::after{
-        
-        content: "";
-          position: absolute;
-          left: 0;
-          top: -5px;
-          transform: skew(-25deg);
-          padding: 5px 5px;
-          width: 100%;
-          height: 100%;
-          border-right: 2px solid var(--secondary);
-        }
-    
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
+@media only screen and (max-width: 1640px) {
+  .desktopNav {
+    width: 90%;
+  }
 
-    
-
-@media only screen and (max-width: 1440px){
-    .houseGrid, .blueGrid{
-        width: 90%;
-        display: block;
-    }
-    .blueContent{
-        width: 90%;
-    }
-
-    .blueGrid div{
-        margin: 20px 0;
-    }
-    .innerNav{
-        width: 100%;
-        padding: 20px 10px;
-    }
-    .innerNav .desktopNav {
-        display: none;
-        position: relative;
-    }
-
-    #openMobile{
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
-    #jumboSectionHome div{
-        width: 50%;
-    }
-    #jumboSectionHome h1{
-        font-size: 3rem;
-    }
-
-    .iconInfo{
-        width: 80%;
-    }
-
-    .iconInfo img{
-        width: 50%;
-    }
-    
-    .fortySixty, .sixtyForty{
-        display: block;
-    }
-
-    .fortySixty .inForty, .sixtyForty .inSixty{
-        width: 100%;
-        margin: 50px 0;
-    }
-
-    .mobileNav{
-        /* display: block; */
-    }
-
+  .desktopNav a {
+    font-size: 0.9rem;
+  }
+  .desktopNav a:not(.btn):not(.lastLink)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -5px;
+    transform: skew(-25deg);
+    padding: 5px 5px;
+    width: 100%;
+    height: 100%;
+    border-right: 2px solid var(--secondary);
+  }
 }
 
-@media only screen and (max-width: 768px){
-    .contactGrid{
-        width: 90%;
-        margin: 0 auto;
-        height: 100%;
-        padding: 50px 0;
+@media only screen and (max-width: 1440px) {
+  .houseGrid,
+  .blueGrid {
+    width: 90%;
+    display: block;
+  }
+  .blueContent {
+    width: 90%;
+  }
+
+  .blueGrid div {
+    margin: 20px 0;
+  }
+  .innerNav {
+    width: 100%;
+    padding: 20px 10px;
+  }
+  .innerNav .desktopNav {
+    display: none;
+    position: relative;
+  }
+
+  #openMobile {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  #jumboSectionHome div {
+    width: 50%;
+  }
+  #jumboSectionHome h1 {
+    font-size: 3rem;
+  }
+
+  .iconInfo {
+    width: 80%;
+  }
+
+  .iconInfo img {
+    width: 50%;
+  }
+
+  .fortySixty,
+  .sixtyForty {
+    display: block;
+  }
+
+  .fortySixty .inForty,
+  .sixtyForty .inSixty {
+    width: 100%;
+    margin: 50px 0;
+  }
+
+  .mobileNav {
+    /* display: block; */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+    .locationGrid {
         display: block;
+    }
+    .locationGrid p{
+        font-size: 1rem;
+        padding: 0;
+        margin: 10px 0;
         
     }
-    
-    .houseGrid .infoStuff h2, .blueContent h2, .orange h2{
-        font-size: 2rem;
-    }
-   .orange .iconGrid {
-        justify-content: space-evenly;
-        width: 100%;
-    }
-    .iconGrid img {
-        width: 70px;
-    
-    }
-    #jumboSectionHome div{
-        width: 80%;
-    }
-    .logoBox img{
-        width: 150px;
-    }
-    #jumboSectionHome h1{
-        font-size: 2rem;
-    }
-    #jumboSectionHome p{
-        font-size: 1.5rem;
-    }
-    .iconInfo{
-        display: block;
-    }
-    .sixtyForty, .fortySixty{
-        margin: 0 auto;
-        display: block;
-        width: 90%;
-        text-align: center;
-    }
-    .sixtyForty img, .fortySixty img{
-        margin: 20px 0;
-    }
-    #mission p{
-        width: 90%;
-        font-size: 1rem;
-    }
-    #mission h2, #why h2{
-        font-size: 2rem;
-    }
-    .inForty h3, .inSixty h3{
-        font-size: 2rem;
-    }
-    #houseCalls{
-        padding: 20px 0;
-    }
+  .contactGrid {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 50px 0;
+    display: block;
+  }
 
-    footer p{
-        font-size: 1rem;
-    }
+  .houseGrid .infoStuff h2,
+  .blueContent h2,
+  .orange h2 {
+    font-size: 2rem;
+  }
+  .orange .iconGrid {
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .iconGrid img {
+    width: 70px;
+  }
+  #jumboSectionHome div {
+    width: 80%;
+  }
+  .logoBox img {
+    width: 150px;
+  }
+  #jumboSectionHome h1 {
+    font-size: 2rem;
+  }
+  #jumboSectionHome p {
+    font-size: 1.5rem;
+  }
+  .iconInfo {
+    display: block;
+  }
+  .sixtyForty,
+  .fortySixty {
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+    text-align: center;
+  }
+  .sixtyForty img,
+  .fortySixty img {
+    margin: 20px 0;
+  }
+  #mission p {
+    width: 90%;
+    font-size: 1rem;
+  }
+  #mission h2,
+  #why h2 {
+    font-size: 2rem;
+  }
+  .inForty h3,
+  .inSixty h3 {
+    font-size: 2rem;
+  }
+  #houseCalls {
+    padding: 20px 0;
+  }
 
-    .mobileNav{
-        top: 50px;
-        padding: 10px 0 50px 20px;
-    }
+  footer p {
+    font-size: 1rem;
+  }
 
-    .iconInfo p{
-        padding: 30px 0;
-    }
+  .mobileNav {
+    top: 50px;
+    padding: 10px 0 50px 20px;
+  }
+
+  .iconInfo p {
+    padding: 30px 0;
+  }
+  .contactGrid form button {
+      width: 100%;
+  }
 }
